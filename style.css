@@ -1,0 +1,74 @@
+/* Variables */
+/* Hero and Footer Colour */
+:root {
+  --dark-bg-color: #1f2937;
+  --hero-main-text: 48px;
+  --hero-main-text-color: #f9faf8;
+  --hero-secondary-text: 18px;
+  --hero-secondary-color: #e5e7eb;
+  --hero-logo-text: 24px;
+  --hero-logo-color: #f9faf8;
+  --button-color: #3882f6;
+  --info-header-text: 36px;
+  --info-header-color: #1f2937;
+  --quote-bg-color: #e5e7eb;
+  --quote-text: 36px;
+  --quote-text-color: #1f2937;
+}
+
+body {
+  margin: 0;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 30vh 60px;
+}
+
+.navbar {
+  background-color: var(--dark-bg-color);
+  height: 10vh;
+}
+
+.flexbox.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: white;
+  margin-top: 25px;
+}
+
+.nav-links {
+  margin-top: 30px;
+}
+
+.nav-link {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1160px;
+}
+
+/* 
+.section.hero {
+  background-color: var(--dark-bg-color);
+}
+
+.section.quote {
+  background-color: var(--quote-bg-color);
+} */
