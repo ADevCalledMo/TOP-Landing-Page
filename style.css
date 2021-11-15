@@ -21,10 +21,17 @@ body {
 }
 
 .section {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 30vh 60px;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1160px;
+}
+
+/* NAV BAR */
 .navbar {
   background-color: var(--dark-bg-color);
   height: 10vh;
@@ -38,13 +45,13 @@ body {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.2 em;
   color: white;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .nav-links {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .nav-link {
@@ -58,17 +65,112 @@ a {
   letter-spacing: 0.03em;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1160px;
-}
-
-/* 
+/* Hero Section */
 .section.hero {
   background-color: var(--dark-bg-color);
 }
 
+.flexbox.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftBlock {
+  min-width: 400px;
+  margin-right: 100px;
+}
+
+.rightBlock img {
+  height: auto;
+  min-width: 200px;
+}
+
+.section.hero h1 {
+  font-size: var(--hero-main-text);
+  color: var(--hero-main-text-color);
+  letter-spacing: 0.05em;
+  font-size: 48px;
+}
+
+.section.hero p {
+  font-size: var(--hero-secondary-text);
+  color: var(--hero-secondary-color);
+  letter-spacing: 0.03em;
+}
+
+.section.hero button {
+  margin-top: 10px;
+  font-size: 18px;
+  letter-spacing: 0.07em;
+  color: var(--dark-bg-color);
+  background-color: white;
+  padding: 15px 30px;
+  border-radius: 40px;
+}
+
+/* Infomation Section  */
+
+.section.info {
+  min-height: 30vh;
+  padding: 15vh 60px;
+}
+
+.flexbox.info {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  padding-bottom: 90px;
+}
+
+.flexbox.info h1 {
+  font-size: 36px;
+  letter-spacing: -0.02em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+
+.item p {
+  font-size: 14px;
+  letter-spacing: 0.07em;
+  line-height: 1.2em;
+}
+
+.bottom {
+  margin: 0px 150px;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  margin-left: 42.5px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: blue;
+  border-radius: 20px;
+}
+
+/* 
 .section.quote {
   background-color: var(--quote-bg-color);
 } */
