@@ -16,8 +16,13 @@
   --quote-text-color: #1f2937;
 }
 
+/* FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,200;1,400&display=swap");
+
 body {
   margin: 0;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 .section {
@@ -130,6 +135,7 @@ a {
   letter-spacing: -0.02em;
   font-weight: bold;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .items {
@@ -170,7 +176,96 @@ a {
   border-radius: 20px;
 }
 
-/* 
 .section.quote {
   background-color: var(--quote-bg-color);
-} */
+  min-height: 20vh;
+  padding: 15vh 60px;
+}
+
+.flexbox.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 160px;
+}
+
+.flexbox.quote p {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.005em;
+  letter-spacing: 0.03em;
+  font-style: italic;
+  text-align: center;
+  color: var(--quote-text-color);
+}
+
+.flexbox.quote h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--quote-text-color);
+  text-align: right;
+}
+
+/* CTA */
+.section.cta {
+  min-height: 400px;
+  padding: 10px;
+}
+
+.flexbox.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-text {
+  display: flex;
+  align-items: center;
+  margin-top: 135px;
+  padding: 40px 60px;
+  justify-content: space-between;
+  background-color: var(--button-color);
+  height: auto;
+  width: 800px;
+  border-radius: 10px;
+}
+
+.cta-left h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: var(--hero-main-text-color);
+}
+
+.cta-left p {
+  margin: 0px;
+  font-weight: 300;
+  color: white;
+}
+
+.cta-right button {
+  font-size: 16px;
+  letter-spacing: 0.07em;
+  color: white;
+  background-color: transparent;
+  padding: 15px 30px;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: white;
+}
+
+/* Footer */
+.section.footer {
+  background-color: var(--dark-bg-color);
+  min-height: 30px;
+  padding: 10px;
+}
+
+.flexbox.footer {
+  text-align: center;
+}
+
+.flexbox.footer p {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
